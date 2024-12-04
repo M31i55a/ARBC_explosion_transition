@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background-color: #000;
+    color : #fff;
+  }
+  
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  .banner .content .title{
+    font-family: 'Hallowed Grounds';
+    font-size: 3rem;
+  }
+  .banner::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    background-image: url("pexels-photo-346529.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+    mask-image: url("burn_effect.gif");
+    mask-size: 50%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
